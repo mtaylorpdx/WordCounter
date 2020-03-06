@@ -67,5 +67,12 @@ namespace WordCounter.TestTools{
       string[] testSplit = {"test","snail","pail","words"};
       CollectionAssert.AreEqual(testSplit, testCounter.SplitString(testString));
     }
+    [TestMethod]
+    public void AddCount_CheckStringArrayForWordMatches_True()
+    {
+      RepeatCounter testCounter = new RepeatCounter("snail", "a snail with a pail is a pail snail");
+      string[] testArray = testCounter.SplitString(testCounter.MultipleWords);
+      Assert.AreEqual(2, testCounter.AddCount(testArray));
+    }
   }
 }

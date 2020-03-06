@@ -44,5 +44,9 @@ namespace WordCounter.Models
       string[] splitString = sentence.Split(' ');
       return splitString;
     }
+    public int AddCount(string[] array)
+    {
+      return 0;
+    }
   }
 }
