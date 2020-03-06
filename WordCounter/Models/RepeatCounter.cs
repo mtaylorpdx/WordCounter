@@ -23,13 +23,12 @@ namespace WordCounter.Models
     {
       foreach (char letter in input)
       {
-        Console.WriteLine(letter);
-        if (char.IsLetter(letter))
+        if (char.IsLetter(letter) == false)
         {
-          return true;
+          return false;
         }
       }
-      return false;
+      return true;
     }
   }
 }
