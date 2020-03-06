@@ -13,5 +13,9 @@ namespace WordCounter.Models
     {
       MultipleWords = multipleWords;
     }
+    public void Lowercase(string inputWord)
+    {
+      
+    }
   }
 }

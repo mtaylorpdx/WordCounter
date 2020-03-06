@@ -21,5 +21,13 @@ namespace WordCounter.TestTools{
       testCounter.SetMultipleWords(testWords);
       Assert.AreEqual(testCounter.MultipleWords, "test words");
     }
+    [TestMethod]
+    public void Lowercase_MakeStringToLowercase_String()
+    {
+      RepeatCounter testCounter = new RepeatCounter();
+      string testUpper = "WoRd";
+      string testLower = "word";
+      Assert.AreEqual(testUpper, testLower);
+    }
   }
 }
