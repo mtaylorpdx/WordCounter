@@ -10,7 +10,7 @@ _This application project is an exercise in C# testing using the console and MST
 
 ## Behavior Driven Development
 | Behavior | Input | Output |
-|:----:|:----:|:-----:|
+|----|----|-----|
 |User inputs a word that is set as a string|"snail"|"snail"|
 |User input word is set to all lowercase|"SnAil"|"snail"|
 |If user inputs nothing, there is an error message|" "|"No word input. Please try again."|
