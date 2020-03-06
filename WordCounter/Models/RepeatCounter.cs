@@ -1,3 +1,5 @@
+using System;
+
 namespace WordCounter.Models
 {
   public class RepeatCounter
@@ -19,6 +21,14 @@ namespace WordCounter.Models
     }
     public bool LetterCheck(string input)
     {
+      foreach (char letter in input)
+      {
+        Console.WriteLine(letter);
+        if (char.IsLetter(letter))
+        {
+          return true;
+        }
+      }
       return false;
     }
   }

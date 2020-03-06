@@ -29,11 +29,13 @@ namespace WordCounter.TestTools{
       RepeatCounter testCounter = new RepeatCounter("test", "test words");
       Assert.AreEqual(true, testCounter.StringCheck("test"));
     }
+    [TestMethod]
     public void StringCheck_CheckStringForContent_False()
     {
       RepeatCounter testCounter = new RepeatCounter(" ", "test words");
-      Assert.AreEqual(false, testCounter.StringCheck(" "));
+      Assert.AreEqual(false, testCounter.StringCheck(""));
     }
+    [TestMethod]
     public void LetterCheck_CheckCharForValidLetter_True()
     {
       RepeatCounter testCounter = new RepeatCounter("test", "test words");
