@@ -1,5 +1,3 @@
-using System;
-
 namespace WordCounter.Models
 {
   public class RepeatCounter
@@ -43,7 +41,8 @@ namespace WordCounter.Models
     }
     public string[] SplitString(string sentence)
     {
-      return null;
+      string[] splitString = sentence.Split(' ');
+      return splitString;
     }
   }
 }
