@@ -30,5 +30,9 @@ namespace WordCounter.Models
       }
       return true;
     }
+    public bool SpaceCheck(string input)
+    {
+      return false;
+    }
   }
 }
