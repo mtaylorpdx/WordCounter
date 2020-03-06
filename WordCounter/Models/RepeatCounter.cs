@@ -46,7 +46,15 @@ namespace WordCounter.Models
     }
     public int AddCount(string[] array)
     {
-      return 0;
+      int count = 0;
+      foreach(string word in array)
+      {
+        if (word == SingleWord)
+        {
+          count++;
+        }
+      }
+      return count;
     }
   }
 }
