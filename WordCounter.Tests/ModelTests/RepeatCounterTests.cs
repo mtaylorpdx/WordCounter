@@ -1,2 +1,10 @@
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-using ProjectName;
+using WordCounter.Models;
+
+namespace WordCounter.TestTools{
+  [TestClass]
+  public class RepeatCounterTests
+  {
+    
+  }
+}
