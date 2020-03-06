@@ -26,8 +26,8 @@ namespace WordCounter.TestTools{
     {
       RepeatCounter testCounter = new RepeatCounter();
       string testUpper = "WoRd";
-      string testLower = "word";
-      Assert.AreEqual(testUpper, testLower);
+      string testLower = testCounter.Lowercase(testUpper);
+      Assert.AreEqual("word", testLower);
     }
   }
 }
