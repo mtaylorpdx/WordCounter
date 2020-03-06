@@ -53,5 +53,11 @@ namespace WordCounter.TestTools{
       RepeatCounter testCounter = new RepeatCounter("snail", "test words");
       Assert.AreEqual(true, testCounter.SpaceCheck("snail"));
     }
+    [TestMethod]
+    public void SpaceCheck_CheckSingleWordForOneWord_False()
+    {
+      RepeatCounter testCounter = new RepeatCounter("snail", "test words");
+      Assert.AreEqual(false, testCounter.SpaceCheck("snail snail"));
+    }
   }
 }
