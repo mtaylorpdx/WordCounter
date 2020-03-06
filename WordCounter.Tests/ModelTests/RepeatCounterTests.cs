@@ -29,10 +29,15 @@ namespace WordCounter.TestTools{
       RepeatCounter testCounter = new RepeatCounter("test", "test words");
       Assert.AreEqual(true, testCounter.StringCheck("test"));
     }
-        public void StringCheck_CheckStringForContent_False()
+    public void StringCheck_CheckStringForContent_False()
     {
       RepeatCounter testCounter = new RepeatCounter(" ", "test words");
       Assert.AreEqual(false, testCounter.StringCheck(" "));
+    }
+    public void LetterCheck_CheckCharForValidLetter_True()
+    {
+      RepeatCounter testCounter = new RepeatCounter("test", "test words");
+      Assert.AreEqual(true, testCounter.LetterCheck("word"));
     }
   }
 }

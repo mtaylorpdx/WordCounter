@@ -17,5 +17,9 @@ namespace WordCounter.Models
       }
       return true;
     }
+    public bool LetterCheck(string input)
+    {
+      return false;
+    }
   }
 }
