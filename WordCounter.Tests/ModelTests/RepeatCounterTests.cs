@@ -59,5 +59,13 @@ namespace WordCounter.TestTools{
       RepeatCounter testCounter = new RepeatCounter("snail", "test words");
       Assert.AreEqual(false, testCounter.SpaceCheck("snail snail"));
     }
+    [TestMethod]
+    public void SplitString_SplitStringToArray_True()
+    {
+      RepeatCounter testCounter = new RepeatCounter("snail", "test words");
+      string testString = "test snail pail words";
+      string[] testSplit = {"test","snail","pail","words"};
+      CollectionAssert.AreEqual(testSplit, testCounter.SplitString(testString));
+    }
   }
 }

@@ -41,5 +41,9 @@ namespace WordCounter.Models
       }
       return true;
     }
+    public string[] SplitString(string sentence)
+    {
+      return null;
+    }
   }
 }
