@@ -32,7 +32,14 @@ namespace WordCounter.Models
     }
     public bool SpaceCheck(string input)
     {
-      return false;
+      foreach (char letter in input)
+      {
+        if (letter == ' ')
+        {
+          return false;
+        }
+      }
+      return true;
     }
   }
 }
