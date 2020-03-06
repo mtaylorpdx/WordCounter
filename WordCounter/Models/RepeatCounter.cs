@@ -11,7 +11,7 @@ namespace WordCounter.Models
     }
     public void SetMultipleWords(string multipleWords)
     {
-      
+      MultipleWords = multipleWords;
     }
   }
 }
