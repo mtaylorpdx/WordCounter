@@ -2,11 +2,16 @@ namespace WordCounter.Models
 {
   public class RepeatCounter
   {
-    public string InputWord;
+    public string SingleWord;
+    public string MultipleWords;
 
-    public void SetInputWord(string inputWord)
+    public void SetInputWord(string singleWord)
     {
-      InputWord = inputWord;
+      SingleWord = singleWord;
+    }
+    public void SetMultipleWords(string multipleWords)
+    {
+      
     }
   }
 }
