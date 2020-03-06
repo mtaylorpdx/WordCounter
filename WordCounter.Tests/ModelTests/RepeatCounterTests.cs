@@ -8,25 +8,19 @@ namespace WordCounter.TestTools{
     [TestMethod]
     public void WordCounter_SetGetWordString_String()
     {
-      RepeatCounter testCounter = new RepeatCounter();
-      string testWord = "test";
-      testCounter.SetInputWord(testWord);
+      RepeatCounter testCounter = new RepeatCounter("test", "test words");
       Assert.AreEqual(testCounter.SingleWord, "test");
     }
     [TestMethod]
     public void WordCounter_SetGetSentenceString_String()
     {
-      RepeatCounter testCounter = new RepeatCounter();
-      string testWords = "test words";
-      testCounter.SetMultipleWords(testWords);
+      RepeatCounter testCounter = new RepeatCounter("test", "test words");
       Assert.AreEqual(testCounter.MultipleWords, "test words");
     }
     [TestMethod]
     public void Lowercase_MakeStringToLowercase_String()
     {
-      RepeatCounter testCounter = new RepeatCounter();
-      string testUpper = "WoRd";
-      testCounter.SetInputWord(testUpper);
+      RepeatCounter testCounter = new RepeatCounter("WoRd", "Test Words");
       Assert.AreEqual("word", testCounter.SingleWord);
     }
   }
