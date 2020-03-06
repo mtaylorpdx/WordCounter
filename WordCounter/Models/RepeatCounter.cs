@@ -7,15 +7,11 @@ namespace WordCounter.Models
 
     public void SetInputWord(string singleWord)
     {
-      SingleWord = singleWord;
+      SingleWord = singleWord.ToLower();
     }
     public void SetMultipleWords(string multipleWords)
     {
-      MultipleWords = multipleWords;
-    }
-    public string Lowercase(string inputWord)
-    {
-      return inputWord.ToLower();
+      MultipleWords = multipleWords.ToLower();
     }
   }
 }
