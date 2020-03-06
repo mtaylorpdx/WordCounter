@@ -9,5 +9,9 @@ namespace WordCounter.Models
       SingleWord = word.ToLower();
       MultipleWords = sentence.ToLower();
     }
+    public bool StringCheck()
+    {
+      return false;
+    }
   }
 }

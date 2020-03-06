@@ -23,5 +23,11 @@ namespace WordCounter.TestTools{
       RepeatCounter testCounter = new RepeatCounter("WoRd", "Test Words");
       Assert.AreEqual("word", testCounter.SingleWord);
     }
+    [TestMethod]
+    public void StringCheck_CheckStringForContent_True()
+    {
+      RepeatCounter testCounter = new RepeatCounter("test", "test words");
+      Assert.AreEqual(true,testCounter.SingleWord);
+    }
   }
 }
