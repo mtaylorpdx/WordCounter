@@ -13,11 +13,10 @@ _This application project is an exercise in C# testing using the console and MST
 |----|----|-----|
 |User inputs a word that is set as a string|"snail"|"snail"|
 |User input word is set to all lowercase|"SnAil"|"snail"|
-|If user inputs nothing, there is an error message|" "|"No word input. Please try again."|
-|If user inputs a number, there is an error message|"Sna1l"|"Word must contain letters only. Please try again."|
-|If user inputs more than one word, there is an error message|"Snail swarm"|"Please enter only one word. Try again."|
-|User inputs a list of words that is set as a string, with all previous tests applying|"A snail with a pail is a pail snail"|"
-a snail with a pail is a snail pail"|
+|If user inputs nothing, there is an error message|" "|"Please enter a valid word"|
+|If user inputs a number, there is an error message|"Sna1l"|"Please enter a valid word"|
+|If user inputs more than one word, there is an error message|"Snail swarm"|"Please enter a valid word"|
+|User inputs a list of words that is set as a string|"A snail with a pail is a pail snail"|"a snail with a pail is a snail pail"|
 |Program takes list of words and splits it into a string array|"snail pail"|["snail", "pail"]|
 |Program compares each string in string array to the original input word and counts the number of matches|"snail", "snail with a pail is a pail snail"|2|
 
