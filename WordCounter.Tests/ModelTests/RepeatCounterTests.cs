@@ -18,7 +18,7 @@ namespace WordCounter.TestTools{
       RepeatCounter testCounter = new RepeatCounter("snail", "test words");
       Assert.AreEqual(testCounter.MultipleWords, "test words");
     }
-    //Test Single Word Input
+    //Test Single String Input
     [TestMethod]
     public void Lowercase_MakeStringToLowercase_String()
     {
@@ -61,8 +61,13 @@ namespace WordCounter.TestTools{
       RepeatCounter testCounter = new RepeatCounter("snail", "test words");
       Assert.AreEqual(false, testCounter.SpaceCheck("snail snail"));
     }
-    //Test Sentence Input
-    
+    [TestMethod]
+    public void RemovePunctuation_RemovePunctuationFromInputStrings_True()
+    {
+      RepeatCounter testCounter = new RepeatCounter("snail", "test, words!");
+      Assert.AreEqual("test words", testCounter.RemovePunctuation(testCounter.MultipleWords));
+    }
+
     //Test Matching and Counting
     [TestMethod]
     public void SplitString_SplitStringToArray_True()
