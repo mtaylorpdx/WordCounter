@@ -4,6 +4,7 @@ namespace WordCounter.Models
   {
     public string SingleWord {set;get;}
     public string MultipleWords {set;get;}
+
     public RepeatCounter(string word, string sentence)
     {
       SingleWord = word.ToLower();
