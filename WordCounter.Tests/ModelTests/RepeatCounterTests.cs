@@ -65,7 +65,7 @@ namespace WordCounter.TestTools{
     public void RemovePunctuation_RemovePunctuationFromInputStrings_True()
     {
       RepeatCounter testCounter = new RepeatCounter("snail", "test, words!");
-      Assert.AreEqual("test words", testCounter.RemovePunctuation(testCounter.MultipleWords));
+      Assert.AreEqual("test  words ", testCounter.RemovePunctuation(testCounter.MultipleWords));
     }
 
     //Test Matching and Counting
