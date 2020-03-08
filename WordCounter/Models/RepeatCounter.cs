@@ -40,6 +40,17 @@ namespace WordCounter.Models
       }
       return true;
     }
+    public string RemovePunctuation(string inputString)
+    {
+      foreach(char letter in inputString)
+      {
+        if (char.IsPunctuation(letter))
+        {
+          inputString = inputString.Replace(letter, ' ');
+        }
+      }
+      return inputString;
+    }
     public string[] SplitString(string sentence)
     {
       string[] splitString = sentence.Split(' ');
