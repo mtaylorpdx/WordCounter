@@ -5,6 +5,7 @@ namespace WordCounter.TestTools{
   [TestClass]
   public class RepeatCounterTests
   {
+    //Test Set and Get
     [TestMethod]
     public void WordCounter_SetGetWordString_String()
     {
@@ -17,6 +18,7 @@ namespace WordCounter.TestTools{
       RepeatCounter testCounter = new RepeatCounter("snail", "test words");
       Assert.AreEqual(testCounter.MultipleWords, "test words");
     }
+    //Test Single Word Input
     [TestMethod]
     public void Lowercase_MakeStringToLowercase_String()
     {
@@ -59,6 +61,9 @@ namespace WordCounter.TestTools{
       RepeatCounter testCounter = new RepeatCounter("snail", "test words");
       Assert.AreEqual(false, testCounter.SpaceCheck("snail snail"));
     }
+    //Test Sentence Input
+    
+    //Test Matching and Counting
     [TestMethod]
     public void SplitString_SplitStringToArray_True()
     {
