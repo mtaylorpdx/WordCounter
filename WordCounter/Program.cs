@@ -8,15 +8,18 @@ namespace WordCounter
     public static void Main()
     {
       Console.Write("Enter a single word: ");
-      string word = Console.ReadLine();
+      string inputWord = Console.ReadLine();
+      RepeatCounter counter = new RepeatCounter(inputWord);
       Console.Write("Enter a series of words: ");
-      string wordList = Console.ReadLine();
+      string inputSentence = Console.ReadLine();
 
-      RepeatCounter counter = new RepeatCounter(word, wordList);
+      inputWord = counter.RemovePunctuation(inputWord);
+      inputSentence = counter.RemovePunctuation(inputSentence);
+      counter = new RepeatCounter(inputWord, inputSentence);
 
-      if ((counter.StringCheck(word)) && (counter.StringCheck(wordList)) && (counter.SpaceCheck(word)) && (counter.LetterCheck(wordList)))
+      if ((counter.StringCheck(counter.SingleWord)) && (counter.StringCheck(counter.MultipleWords)) && (counter.SpaceCheck(counter.SingleWord)) && (counter.LetterCheck(counter.MultipleWords)))
       {
-        int countResult = counter.AddCount(counter.SplitString(wordList));
+        int countResult = counter.AddCount(counter.SplitString(counter.MultipleWords));
         Console.WriteLine("Total matches: " + countResult);
       }
       else

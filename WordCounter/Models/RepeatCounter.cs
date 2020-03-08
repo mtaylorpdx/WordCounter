@@ -5,9 +5,12 @@ namespace WordCounter.Models
     public string SingleWord {set;get;}
     public string MultipleWords {set;get;}
 
-    public RepeatCounter(string word, string sentence)
+    public RepeatCounter(string word)
     {
       SingleWord = word.ToLower();
+    }
+    public RepeatCounter(string word, string sentence) : this(word)
+    {
       MultipleWords = sentence.ToLower();
     }
     public bool StringCheck(string input)
