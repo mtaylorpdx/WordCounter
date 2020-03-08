@@ -9,12 +9,23 @@ namespace WordCounter
     {
       Console.Write("Enter a single word: ");
       string word = Console.ReadLine();
+
+
       Console.Write("Enter a series of words: ");
       string wordList = Console.ReadLine();
+
       RepeatCounter counter = new RepeatCounter(word, wordList);
 
-      int countResult = counter.AddCount(counter.SplitString(wordList));
-      Console.WriteLine("Total matches: " + countResult);
+      if ((counter.StringCheck(word)) && (counter.StringCheck(wordList)))
+      {
+        int countResult = counter.AddCount(counter.SplitString(wordList));
+        Console.WriteLine("Total matches: " + countResult);
+      }
+      else
+      {
+        Console.WriteLine("Please enter both a word and a sentence.");
+        Main();
+      }
     }
   }
 }
