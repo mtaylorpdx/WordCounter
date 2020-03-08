@@ -22,7 +22,7 @@ namespace WordCounter.Models
     {
       foreach (char letter in input)
       {
-        if (char.IsLetter(letter) == false)
+        if ((char.IsLetter(letter) == false && (letter != ' ')))
         {
           return false;
         }
