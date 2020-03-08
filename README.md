@@ -24,8 +24,12 @@ _This application project is an exercise in C# testing using the console and MST
 
 * Open Terminal
 * Type ``$ git clone https://github.com/mtaylorpdx/WordCounter``
-* Navigate to WordCounter.Tests folder
-* Type ``$ dotnet test``
+* To run tests:
+  * Navigate to WordCounter.Tests folder
+  * Type ``$ dotnet test``
+* To run program:
+  * Navigate to WordCounter folder
+  * Type ``$ dotnet run``
 
 ## Support and contact details
 
