@@ -17,6 +17,7 @@ _This application project is an exercise in C# testing using the console and MST
 |If user inputs a number, there is an error message|"Sna1l"|"Please enter a valid word"|
 |If user inputs more than one word, there is an error message|"Snail swarm"|"Please enter a valid word"|
 |User inputs a list of words that is set as a string|"A snail with a pail is a pail snail"|"a snail with a pail is a snail pail"|
+|Program takes string and removes punctuation| "A snail, a pail, a pail snail"|"as snail a pail a pail snail"|
 |Program takes list of words and splits it into a string array|"snail pail"|["snail", "pail"]|
 |Program compares each string in string array to the original input word and counts the number of matches|"snail", "snail with a pail is a pail snail"|2|
 
